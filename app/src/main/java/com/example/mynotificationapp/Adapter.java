@@ -48,7 +48,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
         String go = String.valueOf(notificationList.get(position).getId());
         if(cdb.isExist(go)){
-            holder.linearLayout.setBackgroundColor(Color.WHITE);
+            holder.linearLayout.setBackgroundColor(Color.TRANSPARENT);
         }
 
     }
@@ -80,7 +80,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         public void onClick(View v) {
             int pos = getAdapterPosition();
 
-            linearLayout.setBackgroundColor(Color.LTGRAY);
+            linearLayout.setBackgroundColor(Color.WHITE);
             Methods notify = notificationList.get(pos);
             if(!cdb.isExist(String.valueOf(notify.getId()))){
                 Cmethods read = new Cmethods(String.valueOf(notify.getId()));

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:background="@color/teal_700"
+            android:background="@color/material_on_surface_disabled"
             android:layout_gravity="left"
             android:layout_height="55dp">
             <ImageView
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:textStyle="bold"
-                android:fontFamily="serif"
+                android:fontFamily="@font/bree_serif"
                 android:text="Notifications"
                 android:textSize="26dp"
                 android:textColor="@color/black"/>

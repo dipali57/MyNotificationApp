@@ -19,15 +19,21 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/design_default_color_error">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/titletext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/bree_serif"
                 android:hint="Enter Title"
-                android:textColor="@color/black"
                 android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="@android:color/holo_red_dark"
+                android:textCursorDrawable="@drawable/grad"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,15 +42,17 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/design_default_color_error">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/desctext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/bree_serif"
                 android:hint="Enter Description"
-                android:textColor="@color/black"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,9 +63,11 @@
             android:layout_height="62dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/bree_serif"
+            android:onClick="buttonClick"
             android:text="Get Notify"
             android:textColor="@color/black"
-            android:onClick="buttonClick"
+            android:background="@color/design_default_color_error"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -66,7 +76,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/teal_700"
+        android:background="@color/material_on_background_disabled"
         android:minHeight="?attr/actionBarSize"
         android:padding="6dp"
 
@@ -85,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/bree_serif"
                 android:text="Notification Manager"
                 android:textColor="@color/black"
                 android:textSize="24dp"

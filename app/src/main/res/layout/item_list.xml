@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/change_background"
-            android:background="@color/light_pink"
+            android:background="@color/gradStart"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -34,7 +35,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="7dp"
-                    android:src="@drawable/ic_notification" />
+                    android:src="@drawable/ic_notification"
+                    android:background="@color/cardview_shadow_start_color"/>
 
             </LinearLayout>
 
@@ -44,29 +46,28 @@
                 android:gravity="left"
                 android:layout_marginLeft="20dp"
                 android:orientation="vertical">
+
                 <TextView
+                    android:id="@+id/item_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:id="@+id/item_title"
+                    android:fontFamily="@font/bree_serif"
                     android:text="title"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/item_desc"
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/bree_serif"
                     android:text="description"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_width="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:textSize="12dp"
-                    />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -74,7 +75,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/pink"
+        android:background="@drawable/grad"
         android:layout_marginTop="80dp"
         android:elevation="@dimen/cardview_default_elevation" />
 </androidx.cardview.widget.CardView>
